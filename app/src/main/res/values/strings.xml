@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CardGame</string>
+    <string name="Welcome">Hi-Lo Card game. Each player gets 2 cards dealt, Highest pair wins!</string>
 </resources>
