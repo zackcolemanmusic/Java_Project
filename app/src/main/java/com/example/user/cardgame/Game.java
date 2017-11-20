@@ -29,6 +29,7 @@ public class Game {
     }
 
     public void dealCards(){
+        deck.shuffle();
         Card card = deck.removeCard();
         player1.takeCard(card);
         card = deck.removeCard();
@@ -40,6 +41,24 @@ public class Game {
         player2.takeCard(card);
 
     }
+
+    public Player getWinner() {
+        int player1Value = player1.getTotalValueOfCards();
+        int player2Value = player2.getTotalValueOfCards();
+
+
+        if (player1Value > player2Value) {
+            return player1;
+        } else if (player1Value < player2Value) {
+            return player2;
+        } else return null;
+
+    }
+
+    public void resetGame(){
+        this.deck.shuffle();
+    }
+
 
 
 
