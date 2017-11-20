@@ -55,9 +55,7 @@ public class Game {
 
     }
 
-    public void resetGame(){
-        this.deck.shuffle();
-    }
+
 
 
 
