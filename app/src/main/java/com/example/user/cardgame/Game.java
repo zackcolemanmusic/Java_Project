@@ -1,5 +1,7 @@
 package com.example.user.cardgame;
 
+import java.util.ArrayList;
+
 /**
  * Created by user on 17/11/2017.
  */
@@ -42,18 +44,22 @@ public class Game {
 
     }
 
-    public Player getWinner() {
+    public String getWinner() {
         int player1Value = player1.getTotalValueOfCards();
         int player2Value = player2.getTotalValueOfCards();
 
 
         if (player1Value > player2Value) {
-            return player1;
+            return "Player 1 Wins!";
         } else if (player1Value < player2Value) {
-            return player2;
-        } else return null;
+            return "Player 2 Wins!";
+        } else return "It's a Draw!";
 
     }
+
+
+
+
 
 
 

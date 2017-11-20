@@ -20,6 +20,11 @@ public class Player {
         return name;
     }
 
+    public ArrayList<Card> getCards(){
+        return this.cards;
+    }
+
+
     public int getTotalValueOfCards() {
         int totalValue = 0;
 
@@ -37,4 +42,17 @@ public class Player {
     public void takeCard(Card card){
         this.cards.add(card);
     }
+
+    public ArrayList<String> hands(){
+        ArrayList<String> hands = new ArrayList<String>();
+        for (Card card : cards){
+            hands.add(card.rank.toString());
+        }
+        return hands;
+
+    }
+
+
+
+
 }
