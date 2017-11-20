@@ -43,14 +43,18 @@ public class Player {
         this.cards.add(card);
     }
 
-    public ArrayList<String> hands(){
-        ArrayList<String> hands = new ArrayList<String>();
-        for (Card card : cards){
-            hands.add(card.rank.toString());
-        }
-        return hands;
+    public String getHand(){
+        String hands = "";
 
+        for (Card card : cards){
+            String value = card.getRank().toString() + " : ";
+            hands += value;
+        }
+
+        return hands;
     }
+
+
 
 
 

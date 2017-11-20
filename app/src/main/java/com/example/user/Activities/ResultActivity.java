@@ -39,8 +39,8 @@ public class ResultActivity extends AppCompatActivity {
         Game game = new Game(player1, player2);
         game.shuffleDeck();
         game.dealCards();
-        player1_cards.setText(player1.getCards().toString());
-        player2_cards.setText(player2.getCards().toString());
+        player1_cards.setText("Player 1,      " + player1.getHand());
+        player2_cards.setText("Player 2,      " + player2.getHand());
         result.setText(game.getWinner());
 
 
