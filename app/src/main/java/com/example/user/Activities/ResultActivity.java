@@ -3,6 +3,9 @@ package com.example.user.Activities;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -22,7 +25,8 @@ public class ResultActivity extends AppCompatActivity {
     private TextView player1_name;
     private TextView player2_name;
 
-
+    private Player player1;
+    private Player player2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,23 +47,27 @@ public class ResultActivity extends AppCompatActivity {
         String player1_intent = extras.getString("player1_name");
         String player2_intent = extras.getString("player2_name");
 
+
         player1_name.setText(player1_intent);
         player2_name.setText(player2_intent);
 
     }
 
     public void onButtonClicked(View deal){
-        Player player1 = new Player("Zack");
-        Player player2 = new Player("Pete");
+        player1 = new Player(player1_name.getText().toString());
+        player2 = new Player(player2_name.getText().toString());
+
         Game game = new Game(player1, player2);
         game.shuffleDeck();
         game.dealCards();
+
         player1_cards.setText(player1.getHand());
         player2_cards.setText(player2.getHand());
         result.setText(game.getWinner());
 
-
     }
+
+
 
 
 

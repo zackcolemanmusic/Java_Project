@@ -50,20 +50,12 @@ public class Game {
 
 
         if (player1Value > player2Value) {
-            return "Player 1 Wins!";
+            return player1.getName() + " Wins!";
         } else if (player1Value < player2Value) {
-            return "Player 2 Wins!";
+            return player2.getName() + " Wins!";
         } else return "It's a Draw!";
 
     }
-
-
-
-
-
-
-
-
 
 
 }
