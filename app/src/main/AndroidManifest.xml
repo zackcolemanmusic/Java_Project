@@ -19,7 +19,8 @@
         <activity
             android:name="com.example.user.Activities.ResultActivity"
             android:parentActivityName="com.example.user.Activities.MainActivity" />
-        <activity android:name="com.example.user.Activities.aboutActivity"></activity>
+        <activity android:name="com.example.user.Activities.aboutActivity" />
+        <activity android:name="com.example.user.Activities.settingsActivity"></activity>
     </application>
 
 </manifest>
