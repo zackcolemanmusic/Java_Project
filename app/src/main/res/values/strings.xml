@@ -78,4 +78,6 @@
     <string name="about">About Us</string>
     <string name="About">About Us</string>
     <string name="settings">Settings</string>
+    <string name="about_text">My name is Zack Coleman, I am currently enrolled with CodeClan. I\'ve made a simple Hi-Lo card game for my Java fianl project. Have fun playing with the app!</string>
+    <string name="about_title"><u>About Us</u></string>
 </resources>

@@ -51,10 +51,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/result"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.508"
+        app:layout_constraintVertical_bias="0.514"
         tools:text="player1_cards" />
 
     <TextView
@@ -70,9 +70,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/deal_cards"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result"
+        app:layout_constraintVertical_bias="0.479"
         tools:text="player2_cards" />
 
     <TextView
@@ -84,13 +85,14 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="60dp"
         android:text="name"
+        android:textAlignment="viewStart"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/player1_cards"
-        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029999971" />
+        app:layout_constraintVertical_bias="0.031" />
 
     <TextView
         android:id="@+id/player2_name"
@@ -99,12 +101,13 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:textAlignment="viewStart"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/player2_cards"
-        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/player1_name"
-        app:layout_constraintVertical_bias="0.39"
+        app:layout_constraintVertical_bias="0.382"
         tools:text="name" />
 </android.support.constraint.ConstraintLayout>
