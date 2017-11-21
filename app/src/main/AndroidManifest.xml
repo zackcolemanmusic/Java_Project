@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.user.Activities.ResultActivity" android:parentActivityName="com.example.user.Activities.MainActivity"></activity>
+        <activity
+            android:name="com.example.user.Activities.ResultActivity"
+            android:parentActivityName="com.example.user.Activities.MainActivity" />
+        <activity android:name="com.example.user.Activities.aboutActivity"></activity>
     </application>
 
 </manifest>
