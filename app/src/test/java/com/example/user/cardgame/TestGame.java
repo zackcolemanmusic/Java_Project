@@ -63,7 +63,7 @@ public class TestGame {
 
         spyGame = new Game(player1, player2);
 
-        Player winner = spyGame.getWinner();
+        String winner = spyGame.getWinner();
 
         assertEquals(player1, winner);
 
