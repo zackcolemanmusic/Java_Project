@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, aboutActivity.class);
             startActivity(intent);
 
-        } else if (item.getItemId() == R.id.action_settings){
-            Intent intent = new Intent(this, settingsActivity.class);
+        } else if (item.getItemId() == R.id.action_version){
+            Intent intent = new Intent(this, versionActivity.class);
             startActivity(intent);
         }
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
     tools:context="com.example.user.Activities.MainActivity">
 
     <Button
@@ -23,7 +24,7 @@
         app:layout_constraintVertical_bias="0.9" />
 
     <TextView
-        android:id="@+id/about_us"
+        android:id="@+id/version"
         android:layout_width="245dp"
         android:layout_height="131dp"
         android:layout_marginEnd="8dp"
@@ -31,6 +32,7 @@
         android:layout_marginTop="40dp"
         android:text="@string/Welcome"
         android:textAlignment="center"
+        android:textColor="@android:color/background_light"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
@@ -47,11 +49,12 @@
         android:ems="10"
         android:hint="Player 1"
         android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/play"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/about_us"
+        app:layout_constraintTop_toBottomOf="@+id/version"
         app:layout_constraintVertical_bias="0.089" />
 
     <EditText
@@ -64,6 +67,7 @@
         android:ems="10"
         android:hint="Player 2"
         android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/play"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
